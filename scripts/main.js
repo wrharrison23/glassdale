@@ -4,7 +4,7 @@ import { CriminalList } from "./criminals/CriminalList.js"
 import { FacilityList } from "./facilities/FacilityList.js"
 import { OfficerList } from "./officers/OfficerList.js"
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
-
+import {WitnessList} from "./witnesses/WitnessList.js"
 
 // CriminalList()
 // OfficerList()
