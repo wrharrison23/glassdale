@@ -3,7 +3,7 @@ import { getConvictions } from "./convictions/ConvictionProvider.js"
 import { CriminalList } from "./criminals/CriminalList.js"
 import { FacilityList } from "./facilities/FacilityList.js"
 import { OfficerList } from "./officers/OfficerList.js"
-
+import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 
 
 // CriminalList()
@@ -19,3 +19,4 @@ darkModeButton.addEventListener("click", function(){
     bodyElement.classList.toggle("dark-background")
   })
 
+  ConvictionSelect()
