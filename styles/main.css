@@ -32,9 +32,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .dark-background{
-	background-color: #2b362e;
+	background-color: rgb(68, 68, 68);
 	color: #fafcfb;
+	
   }
+
+
 
 .nav-list {
 	display: flex;

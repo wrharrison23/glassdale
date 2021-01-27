@@ -5,6 +5,7 @@ import { FacilityList } from "./facilities/FacilityList.js"
 import { OfficerList } from "./officers/OfficerList.js"
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 import {WitnessList} from "./witnesses/WitnessList.js"
+import { OfficersSelect } from "./officers/OfficerSelect.js"
 
 // CriminalList()
 // OfficerList()
@@ -20,3 +21,4 @@ darkModeButton.addEventListener("click", function(){
   })
 
   ConvictionSelect()
+  OfficersSelect()

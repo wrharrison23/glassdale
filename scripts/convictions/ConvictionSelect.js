@@ -31,15 +31,15 @@ const render = convictionsCollection => {
 const eventHub = document.querySelector("main")
 
 eventHub.addEventListener("change", (eventObject) => {
-    console.log("You clicked somewhere in the main container")
+    // console.log("You clicked somewhere in the main container")
 
     // To be more specific, we need to know specifically what we clicked on
-    console.log("Here is the element you clicked on: ", eventObject.target)
+    // console.log("Here is the element you clicked on: ", eventObject.target)
 
     if(event.target.id === "crimeSelect"){
-        console.log("You selected something from the crime dropdown")
-        console.log("This is the crime that was selected: ", eventObject.target.value)
+        // console.log("You selected something from the crime dropdown")
+        // console.log("This is the crime that was selected: ", eventObject.target.value)
         
-        CriminalList(eventObject.target.value)
+        CriminalList(eventObject.target.value,null)
     }
 })

@@ -3,7 +3,7 @@ import {criminal} from "./Criminal.js"
 
 const criminalHTML = document.querySelector("#requested-info-container")
 
-export const CriminalList = (convictionFilter) => {
+export const CriminalList = (convictionFilter,officerFilter) => {
     getCriminals().then(() => {
         let criminals = useCriminals();
         let criminalHTMLString = ""
@@ -14,6 +14,12 @@ export const CriminalList = (convictionFilter) => {
             })
         }
         
+        if(officerFilter){
+            criminals = criminals.filter(currentCriminal => {
+                return currentCriminal.arrestingOfficer === officerFilter
+            })
+        }
+
         criminals.forEach(
             (criminalObject) => {
             criminalHTMLString += criminal(criminalObject)
