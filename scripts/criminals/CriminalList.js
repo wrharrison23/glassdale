@@ -12,18 +12,18 @@ export const CriminalList = (convictionFilter,officerFilter) => {
             criminals = criminals.filter(currentCriminal => {
                 return currentCriminal.conviction === convictionFilter
             })
-        }
-        
-        if(officerFilter){
+        } else if(officerFilter){
             criminals = criminals.filter(currentCriminal => {
                 return currentCriminal.arrestingOfficer === officerFilter
             })
-        }
-
-        criminals.forEach(
-            (criminalObject) => {
-            criminalHTMLString += criminal(criminalObject)
-        });
+        } 
+            criminals.forEach(
+                (criminalObject) => {
+                criminalHTMLString += criminal(criminalObject)
+            })
+        
+        
+       ;
         criminalHTML.innerHTML = `
         <h2 class="criminal-head">Criminals</h2>
         <section class= "criminal-list">

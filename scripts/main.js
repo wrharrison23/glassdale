@@ -1,4 +1,4 @@
-
+import {getAssociate} from "./criminals/AssociateList.js"
 import { getConvictions } from "./convictions/ConvictionProvider.js"
 import { CriminalList } from "./criminals/CriminalList.js"
 import { FacilityList } from "./facilities/FacilityList.js"
@@ -22,3 +22,4 @@ darkModeButton.addEventListener("click", function(){
 
   ConvictionSelect()
   OfficersSelect()
+
