@@ -9,7 +9,7 @@ export const criminal = (criminalObject) => {
     <p>Term start: ${new Date(criminalObject.incarceration.start).toLocaleDateString('en-US')}</p>
     <p>Term end: ${new Date(criminalObject.incarceration.end).toLocaleDateString('en-US')}
     <div id="button-div">
-    <button class="associate-button" id="associates--${criminalObject.id}">Known Associates</button>
+    <button class="associate-button" id="associates--${criminalObject.id}" onclick="this.disabled=true">Known Associates</button>
     </div>
     <div id="associate-container-${criminalObject.id}"></div>
     </section>
