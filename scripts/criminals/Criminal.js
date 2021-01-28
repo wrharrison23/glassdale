@@ -16,4 +16,4 @@ export const criminal = (criminalObject) => {
     </div>
     </section>
     `
-}
+} 

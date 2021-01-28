@@ -6,7 +6,10 @@ import { OfficerList } from "./officers/OfficerList.js"
 import {ConvictionSelect} from "./convictions/ConvictionSelect.js"
 import {WitnessList} from "./witnesses/WitnessList.js"
 import { OfficersSelect } from "./officers/OfficerSelect.js"
-
+import {NoteForm} from "./notes/NoteForm.js"
+import {} from "./notes/NoteProvider.js"
+import {} from "./notes/NoteList.js";
+import {NoteList} from "./notes/NoteList.js"
 // CriminalList()
 // OfficerList()
 // FacilityList()
@@ -20,6 +23,7 @@ darkModeButton.addEventListener("click", function(){
     bodyElement.classList.toggle("dark-background")
   })
 
-  ConvictionSelect()
-  OfficersSelect()
-
+ConvictionSelect()
+OfficersSelect()
+NoteForm()
+NoteList()
