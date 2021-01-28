@@ -25,7 +25,7 @@ export const CriminalList = (convictionFilter,officerFilter) => {
         
        ;
         criminalHTML.innerHTML = `
-        <h2 class="criminal-head">Criminals</h2>
+        <h1 class="criminal-head">Criminals</h1>
         <section class= "criminal-list">
         ${criminalHTMLString}
         </section>`
