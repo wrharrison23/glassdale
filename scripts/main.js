@@ -25,5 +25,4 @@ darkModeButton.addEventListener("click", function(){
 
 ConvictionSelect()
 OfficersSelect()
-NoteForm()
-NoteList()
+

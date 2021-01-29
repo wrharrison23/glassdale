@@ -18,6 +18,13 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 
+h2 {
+	margin: 2em 0;
+	border-bottom: 1px solid black;
+	width: 100%;
+	text-align: center;
+}
+
 .criminal-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -33,11 +40,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .dark-background{
 	background-color: rgb(68, 68, 68);
-	color: #fafcfb;
-	
+	color: #fafcfb !important;
   }
 
-
+.note-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 4em;
+}
 
 .nav-list {
 	display: flex;
@@ -55,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
   .officer-container {
 	display: flex;
 	flex-wrap: wrap;
-	
+	justify-content: space-evenly;
   }
 
 #requested-info-container {
@@ -73,10 +84,35 @@ h1,h2,h3,h4,h5,h6 {
 
 .facility-container {
   display: flex;
-  flex-wrap: wrap;
-  
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .associate {
 	border-bottom: 1px dotted black;
+}
+
+.witness-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.filter-container {
+	display:flex;
+}
+
+#dark-mode {
+	float: right;
+	height: 100%;
+	width: 8%;
+}
+
+.heading {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav {
+	width: 95%;
 }

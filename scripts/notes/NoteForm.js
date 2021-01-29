@@ -33,3 +33,7 @@ eventHub.addEventListener("click", (clickEvent) => {
     saveNote(newNote).then(NoteList); // Refresh your list of notes once you've saved your new one
   }
 });
+
+document.querySelector("#notes-nav-link").addEventListener("click", () => {
+  NoteForm();
+});
