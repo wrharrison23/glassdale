@@ -22,6 +22,3 @@ export const saveNote = (note) => {
 
 
 
-const NoteForm = () => {
-    // rest of the code here
-}

@@ -18,14 +18,14 @@ const eventHub = document.querySelector("main");
 
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "saveNote") {
-    let noteInput = document.getElementById("note-text").value;
-    let dateInput = document.getElementById("date").value;
-    let suspectInput = document.getElementById("suspect").value;
+    let noteInput = document.getElementById("note-text");
+    let dateInput = document.getElementById("date");
+    let suspectInput = document.getElementById("suspect");
     // Make a new object representation of a note
     const newNote = {
-      noteText: noteInput,
-      date: dateInput,
-      suspect: suspectInput,
+      noteText: noteInput.value,
+      date: dateInput.value,
+      suspect: suspectInput.value,
     };
 
     // Change API state and application state
