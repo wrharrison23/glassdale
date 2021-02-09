@@ -1,40 +1,10 @@
 {
   "notes": [
     {
-      "noteText": "hi",
-      "date": "1/1/2021",
-      "suspect": "wes",
+      "noteText": "yessir",
+      "date": "2/2/2020",
+      "criminalId": "1",
       "id": 1
-    },
-    {
-      "noteText": "2nd note",
-      "date": "1/29/2021",
-      "suspect": "Me",
-      "id": 2
-    },
-    {
-      "noteText": "test",
-      "date": "test",
-      "suspect": "test",
-      "id": 3
-    },
-    {
-      "noteText": "test",
-      "date": "test",
-      "suspect": "test",
-      "id": 4
-    },
-    {
-      "noteText": "test",
-      "date": "test",
-      "suspect": "test",
-      "id": 5
-    },
-    {
-      "noteText": "new note",
-      "date": "2/1/2021",
-      "suspect": "bill",
-      "id": 6
     }
   ]
 }
