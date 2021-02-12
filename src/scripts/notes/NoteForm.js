@@ -1,5 +1,6 @@
 import { saveNote } from "./NoteProvider.js";
 import {getCriminals, useCriminals} from "../criminals/CriminalProvider.js"
+import {NoteList} from "./NoteList.js"
 const contentTarget = document.querySelector(".noteFormContainer");
 
 export const NoteForm = () => {
@@ -9,8 +10,6 @@ export const NoteForm = () => {
     contentTarget.innerHTML = `
         <label for="note-text">Note:</label>
         <input type="text" id="note-text" label="Note">
-        <label for="date">Date:</label>
-        <input type="text" id="date">
          <label for="suspect">Suspect:</label>
         <select id="noteForm--criminal" class="criminalSelect">
         ${criminalOptions(criminals)}
@@ -27,12 +26,10 @@ const eventHub = document.querySelector("main");
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "saveNote") {
     let noteInput = document.getElementById("note-text");
-    let dateInput = document.getElementById("date");
     let suspectInput = document.getElementById("noteForm--criminal");
     // Make a new object representation of a note
     const newNote = {
       noteText: noteInput.value,
-      date: dateInput.value,
       criminalId: suspectInput.value,
     };
 
@@ -42,9 +39,9 @@ eventHub.addEventListener("click", (clickEvent) => {
   }
 });
 
-document.querySelector("#notes-nav-link").addEventListener("click", () => {
-  NoteForm();
-});
+// document.querySelector("#notes-nav-link").addEventListener("click", () => {
+//   NoteForm();
+// });
 
 const criminalOptions = (criminalArray) => {
   
