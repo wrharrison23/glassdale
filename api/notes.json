@@ -1,10 +1,24 @@
 {
   "notes": [
     {
-      "noteText": "yessir",
-      "date": "2/2/2020",
+      "noteText": "Note",
       "criminalId": "1",
       "id": 1
+    },
+    {
+      "noteText": "Note",
+      "criminalId": "1",
+      "id": 2
+    },
+    {
+      "noteText": "Note",
+      "criminalId": "1",
+      "id": 3
+    },
+    {
+      "noteText": "Note",
+      "criminalId": "1",
+      "id": 4
     }
   ]
 }
