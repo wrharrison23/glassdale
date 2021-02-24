@@ -1,27 +1,32 @@
-export const criminal = (criminalObject) => {
-    return `
-    <section class="card text-center border-secondary mb-3 h-100" style="width: 18rem;>
-    <div class="card-body">
-    <h4 class="criminal-name">
-    ${criminalObject.name}
-    </h4>
-    <p class="card-text"><strong>Age:</strong> ${criminalObject.age}</p>
-    <p class="card-text"><strong>Crime:</strong> ${
-      criminalObject.conviction
-    }</p>
-    <p class="card-text"><strong>Term start:</strong> ${new Date(
-      criminalObject.incarceration.start
-    ).toLocaleDateString("en-US")}</p>
-    <p class="card-text"><strong>Term end:</strong> ${new Date(
-      criminalObject.incarceration.end
-    ).toLocaleDateString("en-US")}
-    <div id="button-div">
-    <button class="associate-button" id="associates--${
-      criminalObject.id
-    }" onclick="this.disabled=true">Known Associates</button>
+export const Criminal = (criminalObject, facilities) => {
+  return `
+    <div class="criminal card text-center">
+        <h4>${criminalObject.name}</h4>
+        <div class="criminal__details">
+            <p>Convicted for ${criminalObject.conviction}</p>
+            <p>Arrested by ${criminalObject.arrestingOfficer}</p>
+            <p>Incarcerated between:
+                ${new Date(
+                  criminalObject.incarceration.start
+                ).toLocaleDateString()} and
+                ${new Date(
+                  criminalObject.incarceration.end
+                ).toLocaleDateString()}
+            </p>
+            <p>Age: ${criminalObject.age}</p>
+            <div class="text-center">
+                <h3>Facilities</h3>
+                <ul class="text-center">
+                    ${facilities
+                      .map((f) => `<li>${f.facilityName}</li>`)
+                      .join("")}
+                </ul>
+            </div>
+            <button class="associate-button" id="associates--${
+              criminalObject.id
+            }">Show Associates</button>
+        </div>
+        <div id="associate-container-${criminalObject.id}"></div>
     </div>
-    <div id="associate-container-${criminalObject.id}"></div>
-    </div>
-    </section>
     `;
-} 
+};

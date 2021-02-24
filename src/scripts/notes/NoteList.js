@@ -1,7 +1,7 @@
 import {getNotes, useNotes, deleteNote} from "./NoteProvider.js"
 import {getCriminals, useCriminals} from "../criminals/CriminalProvider.js"
 import { NoteForm } from "./NoteForm.js";
-const contentTarget = document.querySelector(".noteContainer");
+const contentTarget = document.querySelector("#requested-info-container");
 
 const render = (noteCollection, criminalCollection) => {
   contentTarget.innerHTML = noteCollection.map((note) => {
